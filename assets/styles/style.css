@@ -1,0 +1,109 @@
+/* Beyond */
+/* #ff9ff3,#48dbfb */
+/* #8d4fff,#fa9e1b*/
+/* Css for all */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.text-center{
+    text-align: center !important;
+}
+.text-gray{
+    color: #333 !important;
+}
+.text-white{
+    color:#fff !important;
+}
+.text-black{
+    color:#000 !important;
+}
+.mg-5{
+    margin: 0 5%;
+}
+.font-eph{
+    font-family: 'Ephesis', cursive;
+}
+
+/* CSS for header */
+.header{
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    width:100%;
+}
+.header-bg{
+    position: absolute;
+    height: 6rem;
+    width: 100%;
+    opacity: 0.6;
+    z-index: 1;
+}
+.header-logo{
+    margin: 1rem 5%;
+    display: flex;
+    flex:1;
+    z-index:2;
+}
+.logo-title{
+    padding-top: 1.2rem;
+    font-size: 1.5rem;
+}
+.header-navbar{
+    flex:2;
+    z-index:2;
+}
+.ul-navbar{
+    list-style-type: none;
+    margin-top: 2.2rem;
+}
+.ul-navbar li{
+    display: inline;
+    padding: 0 0.5rem;
+}
+.ul-navbar a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:#333;
+}
+.ul-navbar li:hover a{
+    color:#ff7979;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #ff7979;
+}
+.header-search{
+    margin-top: 1.2rem;
+    flex:0.5;
+    z-index:2;
+}
+.header-search i{
+    padding: 1rem;
+}
+.header-search i:hover{
+    color:#ff7979;
+}
+
+/* CSS for slider */
+.slider{
+    height: 100vh;
+    background-image: url("../images/slider.jpg");
+    background-size: cover;
+    background-position:center;
+}
+.slider-title{
+    letter-spacing: 10px;
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    font-size: 80px;
+}

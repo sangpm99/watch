@@ -31,6 +31,9 @@ html{
 .font-eph{
     font-family: 'Ephesis', cursive;
 }
+.text-title{
+    font-size: 5rem;
+}
 
 /* CSS for header */
 .header{
@@ -202,18 +205,17 @@ video{
     margin: 0 5%;
 }
 .product-main{
-    margin-top: 2rem;
-    border: 1px solid red;
+    margin: 2rem -2rem 0 -2rem;
+    /* border: 1px solid red; */
     min-height: 1rem;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .product-box{
-    border: 1px solid red;
-    min-height: 1rem;
-    width: 30%;
-    margin-bottom: 1rem;
+    /* border: 1px solid red; */
+    width: 22%;
+    margin: 1.2rem;
 }
 .buy{
     display: block;
@@ -221,24 +223,82 @@ video{
     position: relative;
     bottom: 3.5rem;
 }
-.buy a{
-    display: block;
-    padding: 0.8rem;
-    margin: 0 30%;
-    border-radius: 2rem;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    background-image: linear-gradient(to right,#ff7979,#ffbe76);
-    color: #fff;
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
-}
-.buy a:hover{
-    background-image: linear-gradient(to left,#ff7979,#ffbe76);
-}
 .product-box img{
     width: 100%;
 }
+.product-box img{
+    transition: all 0.2s ease-in-out;
+}
 .product-box img:hover{
     opacity: 0.8;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+.product-title{
+    font-weight: bold;
+    margin: 1rem 0;
+}
+.product-price{
+    font-weight: bold;
+    color: #ff7979;
+}
+
+/* Begin footer */
+.footer{
+    margin-top: 10vh;
+    min-height: 30vh;
+    background-color: #212121;
+}
+.contact{
+    margin: 1rem 5rem 0 5rem;
+    display: flex;
+}
+.contact-info{
+    flex: 2;
+    padding: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 4rem;
+}
+.contact-box{
+    width: 100%;
+    padding: 1rem;
+    border-bottom: 1px solid #ff7979;
+}
+.contact-box i{
+    color: #fff;
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+.contact-box p{
+    display: inline-block;
+    color: #fff;
+}
+.contact-map{
+    flex: 1;
+}
+.contact-map img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.contact-2{
+    display: flex;
+    justify-content: center;
+}
+.contact-2 i{
+    font-size: 3rem;
+}
+.contact-2 a{
+    color: #fff;
+    margin-right: 2rem;
+}
+.contact-2 a:hover{
+    color: #ffbe76;
+}
+.infor{
+    color: #fff;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    margin-left: -1.3rem;
 }

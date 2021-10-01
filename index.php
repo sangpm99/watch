@@ -33,7 +33,7 @@
                 <li><a href="index.php">Trang chủ</a></li>
                 <li><a href="#about">Thông tin</a></li>
                 <li><a href="#product">Sản phẩm</a></li>
-                <li><a href="#contact">Liên hệ</a></li>
+                <li><a href="#footer">Liên hệ</a></li>
                 <li><a href="">Đăng nhập</a></li>
             </ul>
         </div>
@@ -125,23 +125,100 @@
         <h2 class="font-eph text-center text-gray">Sản phẩm</h2>
         <div class="product-main">
             <div class="product-box">
-                <img src="./assets/images/b1.jpg" alt="Bentle">
-                <div class="buy"><a href="">Đặt hàng</a></div>
-                <p>
-                    Bentley BL2096-152WWI-S
-                </p>
+                <a href="#"><img src="./assets/images/b1.jpg" alt="Bentle"></a>
+                <p class="product-title">Bentley BL2096-152WWI-S</p>
+                <p class="product-price">16,500,000 VND</p>
             </div>
             <div class="product-box">
-                <img src="./assets/images/b2.jpg" alt="Bentle">
+                <a href="#"><img src="./assets/images/b2.jpg" alt="Bentle"></a>
+                <p class="product-title">Bentley BL2096-152KBI-S</p>
+                <p class="product-price">17,000,000 VND</p>
             </div>
             <div class="product-box">
-                <img src="./assets/images/b3.jpg" alt="Bentle">
+                <a href="#"><img src="./assets/images/b3.jpg" alt="Bentle"></a>
+                <p class="product-title">Bentley BL1822-152KBI-S</p>
+                <p class="product-price">13,500,000 VND</p>
             </div>
             <div class="product-box">
-                <img src="./assets/images/b4.jpg" alt="Bentle">
+                <a href="#"><img src="./assets/images/b4.jpg" alt="Bentle"></a>
+                <p class="product-title">Bentley BL1796-302TCI-S</p>
+                <p class="product-price">12,300,000 VND</p>
+            </div>
+            <div class="product-box">
+                <a href="#"><img src="./assets/images/b5.jpg" alt="Bentle"></a>
+                <p class="product-title">Bentley BL1784-302KCD</p>
+                <p class="product-price">8,050,000 VND</p>
+            </div>
+            <div class="product-box">
+                <a href="#"><img src="./assets/images/o1.jpg" alt="Orient"></a>
+                <p class="product-title">Orient Star RE-AV0116L00BL</p>
+                <p class="product-price">21,410,000 VND</p>
+            </div>
+            <div class="product-box">
+                <a href="#"><img src="./assets/images/o2.jpg" alt="Orient"></a>
+                <p class="product-title">Orient Star RE-AU0406L00B</p>
+                <p class="product-price">17,630,000 VND</p>
+            </div>
+            <div class="product-box">
+                <a href="#"><img src="./assets/images/o3.jpg" alt="Orient"></a>
+                <p class="product-title">Orient SK RA-AA0B03L19B</p>
+                <p class="product-price">6,800,000 VND</p>
+            </div>
+            <div class="product-box">
+                <a href="#"><img src="./assets/images/o4.jpg" alt="Orient"></a>
+                <p class="product-title">Orient SK RA-AA0B01G19B</p>
+                <p class="product-price">6,800,000 VND</p>
+            </div>
+            <div class="product-box">
+                <a href="#"><img src="./assets/images/o5.jpg" alt="Orient"></a>
+                <p class="product-title">Orient SK RA-AA0B01G19B</p>
+                <p class="product-price">7,810,000 VND</p>
+            </div>
+            <div class="product-box">
+                <a href="#"><img src="./assets/images/o6.jpg" alt="Orient"></a>
+                <p class="product-title">Orient Star SDE00003B0</p>
+                <p class="product-price">20,410,000 VND</p>
+            </div>
+            <div class="product-box">
+                <a href="#"><img src="./assets/images/v1.jpg" alt="Vertu"></a>
+                <p class="product-title">Vertu V01G-02-C13ER</p>
+                <p class="product-price">90.000.000 VND</p>
             </div>
         </div>
     </div>
     <!-- End Product -->
+
+    <!-- Begin Contact -->
+    <div id="footer" class="footer">
+        <h3 class="footer-title text-white font-eph text-title text-center">Thông tin liên hệ</h3>
+        <div class="contact">
+            <div class="contact-info">
+                <div class="contact-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>176 Tây Sơn, Đống Đa, Hà Nội, Việt Nam</p>
+                </div>
+                <div class="contact-box">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>6996.666.999</p>
+                </div>
+                <div class="contact-box">
+                    <i class="fas fa-envelope"></i>
+                    <p>nhom18@email.com</p>
+                </div>
+            </div>
+            <div class="contact-map">
+                <img src="./assets/images/map3.png" alt="Map">
+            </div>
+        </div>
+        <div class="contact-2">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+        </div>
+        <h3 class="infor text-center">
+            Powered by Group 18
+        </h3>
+    </div>
+    <!-- End Contact -->
 </body>
 </html>

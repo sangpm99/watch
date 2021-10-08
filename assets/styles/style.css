@@ -12,6 +12,13 @@ html{
     scroll-behavior: smooth;
     font-family: Helvetica, Arial, sans-serif;
 }
+.body-2{
+    background-color: #dfe6e9;
+}
+/* .body-3{
+    background-image: url("../images/bg-login.png");
+    background-repeat: no-repeat;
+} */
 
 .text-center{
     text-align: center !important;
@@ -26,7 +33,13 @@ html{
     color:#000 !important;
 }
 .mg-5{
-    margin: 0 5%;
+    margin: 0 5% 2rem 5% !important;
+}
+.mgb-5{
+    margin-bottom: 2rem !important;
+}
+.bd-none{
+    border-radius: none !important;
 }
 .font-eph{
     font-family: 'Ephesis', cursive;
@@ -217,12 +230,6 @@ video{
     width: 22%;
     margin: 1.2rem;
 }
-.buy{
-    display: block;
-    width: 100%;
-    position: relative;
-    bottom: 3.5rem;
-}
 .product-box img{
     width: 100%;
 }
@@ -301,4 +308,270 @@ video{
     margin-top: 2rem;
     padding-bottom: 2rem;
     margin-left: -1.3rem;
+}
+
+
+/* CSS for prduct-infor.php */
+.product-info{
+    display: flex;
+    margin: 0 5%;
+}
+.product-img{
+    flex: 1;
+    margin-right: 2rem;
+}
+.product-img img{
+    width: 100%;
+}
+.product-text{
+    flex: 2;
+}
+.product-text h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.product-text-price{
+    color: #ff7979;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.information{
+    text-align: justify;
+    width: 85%;
+    margin-bottom: 2rem;
+}
+.order{
+    text-decoration: none;
+    background-image: linear-gradient(to left,#ff7979,#ffbe76);
+    padding: 1rem 4rem;
+    color: #fff;
+    border-radius: 2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.order:hover{
+    background-image: linear-gradient(to right,#ff7979,#ffbe76);
+}
+
+/* CSS for order */
+h4{
+    font-size: 4rem;
+    background-color: #dfe6e9;
+}
+.order-form{
+    margin: 1rem 25%;
+}
+.form-1{
+    display: flex;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+.form-order legend{
+    margin-left: 2rem;
+    padding: 0 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.order-product-img{
+    width: 30%;
+    padding: 1rem;
+}
+.order-product-img img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.order-product-desc{
+    margin-top: 1rem;
+}
+.order-product-desc h5{
+    font-size: 2rem;
+}
+.order-product-desc p{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #ff7979;
+    font-weight: bold;
+}
+.form-2{
+    border-radius: 1rem;
+    padding: 1rem;
+}
+label{
+    display: block;
+    font-weight: bold;
+    margin: 1rem 0 0.5rem 0;
+}
+.form-2 input{
+    border-radius: 5px;
+    padding: 0.5rem;
+    width: 100%;
+    border: 1px solid #000;
+}
+.form-2 .add{
+    margin-top: 1.5rem;
+    background-image: linear-gradient(to right,#ff7979,#ffbe76);
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    border: none;
+    width: 100%;
+    margin-left: 0;
+    cursor: pointer;
+}
+.form-2 .add:hover{
+    background-image: linear-gradient(to left,#ff7979,#ffbe76);
+    opacity: 1;
+}
+#form-2-address{
+    width: 100%;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+
+
+/* CSS for login */
+.login{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/bg-login.png");
+}
+.frm-login{
+    padding: 4rem 2rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #dfe6e9;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    border-radius: 0.5rem;
+}
+.frm-login h5{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-family: 'Ephesis', cursive;
+}
+.frm-login input{
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+}
+.submit{
+    background-image: linear-gradient(to right,#ff7979,#ffbe76);
+    color: #fff;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #000;
+}
+.submit:hover{
+    background-image: linear-gradient(to left,#ff7979,#ffbe76);
+    cursor: pointer;
+}
+
+/* CSS for admin */
+.main-title{
+    margin: 8rem 5% 2rem 5%;
+    text-align: center;
+    font-size: 3rem;
+    background-color: #dfe6e9;
+    border-radius: 0.5rem;
+}
+.add , .edit, .delete{
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.4rem;
+    padding: 0.5rem 0.8rem;
+}
+.add:hover , .edit:hover, .delete:hover{
+    opacity: 0.5;
+}
+.add{
+    background-color: #71be34;
+    margin: 0 0 2rem 5%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    border: none;
+}
+.edit{
+    background-color: #ffb702;
+    margin: 0 0 2rem 5%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    border: none;
+}
+.form-add-employee .edit , .form-add-product .edit{
+    margin: 1rem 0;
+}
+.delete{
+    background-color: #ff623d;
+}
+table ,td , th{
+    border: 1px solid #636e72;
+}
+
+table{
+    border-collapse: collapse;
+    width: 90%;
+    margin: 1rem 5%;
+}
+td,th{
+    padding: 1rem;
+    text-align: center;
+}
+.over-hidden{
+    overflow: hidden;
+    width: 30%;
+    max-height: 4rem;
+}
+
+/* CSS for add product */
+.form-add-product{
+    margin: 0 5%;
+    padding: 1rem;
+}
+.form-add-product input, .form-add-product textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #b2bec3;
+}
+.form-add-product input[type="file"]{
+    width: 15%;
+    border: none;
+}
+.form-add-product .add{
+    margin: 1rem 0;
+}
+
+/* CSS for add employee */
+.form-add-employee{
+    margin: 0 5%;
+    padding: 1rem;
+}
+.form-add-employee input, .form-add-employee textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #b2bec3;
+}
+.form-add-employee input[type="file"]{
+    width: 15%;
+    border: none;
+}
+.form-add-employee .add{
+    margin: 1rem 0;
+}
+/* Css for search */
+.mg{
+    margin: 8rem 5% 1rem 5%;
+}
+.key{
+    margin: 0.5rem 5%;
+    width: 100%;
 }

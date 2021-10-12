@@ -33,7 +33,7 @@
                 $price = $row['price'];
     ?>
                 <div class="order-form">
-                    <form method="POST" action="#" class="form-order">
+                    <form method="POST" action="" class="form-order">
                         <fieldset class="form-1">
                             <legend>
                                 Đồng hồ đã chọn
@@ -58,7 +58,8 @@
                             <input type="email" id="form-2-email" name="form-2-email" required placeholder="Ví dụ: email@email.com">
                             <label for="#form-2-address">Địa chỉ</label>
                             <textarea type="text" rows="5" id="form-2-address" name="form-2-address" required placeholder="Ví dụ: Số 178 Đống Đa, Hà nội"></textarea>
-                            <button class="add" name="btn-add-employee" type="submit">Thêm</button>
+                            <label for="">Phương thức thanh toán : Thanh toán khi nhận hàng</label>
+                            <button class="add" name="btn-add-employee" type="submit">Đặt Hàng</button>
                         </fieldset>
                     </form>
                 </div>
@@ -78,7 +79,20 @@
             $num = 20;
             $date = $num.''.$year.'-'.$month.'-'.$day;
 
-            //B2 : Thực hiện truy vấn
+            $subject = "Hóa đơn mua hàng tại WATCH STORE";
+            $line1 = "Xin chào : ".$name;
+            $line2 = "\nCảm ơn bạn đã mua hàng tại WATCH STORE";
+            $line3 = "\nHóa đơn của bạn là :";
+            $line4 = "\n    Tên sản phẩm : ".$product_name;
+            $line5 = "\n    Giá sản phẩm : ".$price." VND";
+            $line6 = "\n    Ngày mua : ".$day."/".$month."/".$num.''.$year;
+            $line7 = "\n    Số điện thoại liên hệ : ".$number;
+            $line8 = "\n    Địa chỉ : ".$address;
+            $line9 = "\nBạn vui lòng kiểm tra lại hóa đơn. Nếu có sai sót hoặc góp ý xin vui lòng liên hệ đến hotline: 0123.456.789 , để được nhân viên tư vấn hỗ trợ";
+            $message = $line1.''.$line2.''.$line3.''.$line4.''.$line5.''.$line6.''.$line7.''.$line8.''.$line9;
+            $headers = "From: phamsang050599@gmail.com";
+            
+            mail($email, $subject, $message, $headers);
             $sql = "INSERT INTO `tbl_bill` (`id`, `product_name`, `price`, `purchase_date`, `customer_name`, `number`, `email`, `address`) VALUES (NULL, '$product_name', '$price', '$date', '$name', '$number', '$email' , '$address')";
             $result = mysqli_query($conn,$sql);
             if($result == true){

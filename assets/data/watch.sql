@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 08, 2021 at 09:41 AM
+-- Generation Time: Oct 12, 2021 at 11:10 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.10
 
@@ -70,10 +70,11 @@ CREATE TABLE `tbl_employee` (
 --
 
 INSERT INTO `tbl_employee` (`id`, `name`, `age`, `number`, `email`, `address`, `position`) VALUES
-(1, 'Trần Văn Thuật', 22, '0987654321', 'thuattv72@email.com', 'Hà Nội', 'Quản lý'),
+(1, 'Trần Văn Thuật', 22, '0987654321', 'thuattv72@gmail.com', 'Hà Nội', 'Quản lý'),
 (2, 'Đào Tuấn Minh', 22, '0192837447', 'minhdt72@gmail.com', 'Hà Nam', 'Nhân viên'),
 (3, 'Phạm Minh Sáng', 23, '0978624332', 'sangpm72@gmail.com', 'Đà Nẵng', 'Nhân viên'),
-(15, 'Nguyễn Tiến Duy', 18, '07865656456', 'duycomvn9@gmail.com', 'Khánh Hòa', 'Nhân viên');
+(18, 'Nguyễn Tiến Đạt', 19, '0897675645', 'datnt@gmail.com', 'Bắc Ninh', 'Nhân viên'),
+(19, 'Phạm Quốc Tuấn', 19, '0897675645', 'tuanpq@gmail.com', 'Hải Phòng', 'Nhân viên');
 
 -- --------------------------------------------------------
 
@@ -164,19 +165,19 @@ ALTER TABLE `tbl_user`
 -- AUTO_INCREMENT for table `tbl_bill`
 --
 ALTER TABLE `tbl_bill`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `tbl_employee`
 --
 ALTER TABLE `tbl_employee`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `tbl_product`
 --
 ALTER TABLE `tbl_product`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `tbl_user`

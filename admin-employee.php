@@ -11,6 +11,7 @@
             <th>HỌ TÊN</th>
             <th>TUỔI</th>
             <th>SỐ ĐIỆN THOẠI</th>
+            <th>EMAIL</th>
             <th>ĐỊA CHỈ</th>
             <th>CHỨC VỤ</th>
             <th colspan="2">HÀNH ĐỘNG</th>
@@ -31,6 +32,7 @@
                         <td><?php echo $row['name']; ?></td>
                         <td><?php echo $row['age']; ?></td>
                         <td><?php echo $row['number']; ?></td>
+                        <td><?php echo $row['email']; ?></td>
                         <td><?php echo $row['address']; ?></td>
                         <td><?php echo $row['position']; ?></td>
                         <td><a class="edit" href="admin-change-employee.php?id=<?php echo $row['id']; ?>">Sửa</a></td>
